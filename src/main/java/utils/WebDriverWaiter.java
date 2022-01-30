@@ -1,7 +1,6 @@
 package utils;
 
 
-
 import static com.codeborne.selenide.WebDriverRunner.driver;
 
 import com.codeborne.selenide.SelenideElement;

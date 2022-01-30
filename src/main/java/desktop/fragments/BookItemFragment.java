@@ -14,14 +14,12 @@ public class BookItemFragment extends AbstractFragment {
     public BookItemFragment() {
     }
 
-    public void clickAddToBasketButton(String productTitle) throws InterruptedException {
-        Thread.sleep(2000);
+    public void clickAddToBasketButton(String productTitle) {
         booksList.stream()
                 .filter(book -> book.$x(".//h3[@class='title']/a").getText()
                         .equals(productTitle)).findFirst()
                 .orElseThrow(() -> new NoSuchElementException("No book found"))
                 .$x(".//div[@class='item-actions']//a").click();
-
     }
 
 }

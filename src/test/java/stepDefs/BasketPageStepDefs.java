@@ -10,10 +10,12 @@ import io.cucumber.java.Transpose;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import java.util.Map;
+import org.apache.log4j.Logger;
 
 public class BasketPageStepDefs {
 
     BasketPage basketPage = new BasketPage();
+    private final static Logger logger = Logger.getLogger(BasketPageStepDefs.class);
 
     @When("I click 'Checkout' button on Basket page")
     public void iClickCheckoutButtonOnBasketPage() {
@@ -28,6 +30,7 @@ public class BasketPageStepDefs {
 
     @Then("I am redirected to a Basket page")
     public void verifyUserIsRedirectedToBasketPage() {
+        logger.debug("Basket page was opened");
         assertThat(getTitle())
                 .withFailMessage("Search page is not found")
                 .isEqualTo(TITLE);

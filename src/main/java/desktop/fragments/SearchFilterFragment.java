@@ -10,7 +10,8 @@ import java.util.Map;
 public class SearchFilterFragment extends AbstractFragment {
 
     private final SelenideElement fragmentRootElement = $x("//form[@class='filter-menu']");
-    private final SelenideElement submitButton = $x("//form[@class='filter-menu']//button[@type='submit']");
+    private final SelenideElement submitButton = $x(
+            "//form[@class='filter-menu']//button[@type='submit']");
 
     public SearchFilterFragment() {
     }
@@ -22,7 +23,7 @@ public class SearchFilterFragment extends AbstractFragment {
     public void selectOption(DataTable table) {
         Map<String, String> list = table.asMap(String.class, String.class);
         for (String key : list.keySet()) {
-           $x("//option[@label='" + list.get(key) + "']").click();
+            $x("//option[@label='" + list.get(key) + "']").click();
         }
     }
 

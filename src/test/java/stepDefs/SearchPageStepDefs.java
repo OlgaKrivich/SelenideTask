@@ -9,10 +9,12 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import java.util.List;
+import org.apache.log4j.Logger;
 
 public class SearchPageStepDefs {
 
     SearchPage searchPage = new SearchPage();
+    private final static Logger logger = Logger.getLogger(SearchPageStepDefs.class);
 
     @When("I apply the following search filters")
     public void applySearchFilter(DataTable table) {
@@ -24,6 +26,7 @@ public class SearchPageStepDefs {
     @When("^I click 'Add to basket' button for product with name '([\\w ]+)'$")
     public void clickAddToBasketButton(String expectedProductName) throws InterruptedException {
         searchPage.getBookItemFragment().clickAddToBasketButton(expectedProductName);
+        logger.info(expectedProductName + " was added to the Basket");
     }
 
     @Then("I am redirected to a Search page")
@@ -31,6 +34,7 @@ public class SearchPageStepDefs {
         assertThat(getTitle())
                 .withFailMessage("Search page is not found")
                 .isEqualTo(TITLE);
+        logger.info("User was redirected to Search page");
     }
 
     @Then("Search results contain the following products")
@@ -45,7 +49,6 @@ public class SearchPageStepDefs {
         assertThat(searchPage.getSearchResultsFragment().getBookItemsTitles())
                 .withFailMessage("Search results do not contain only the following products ")
                 .isEqualTo(expectedProductList);
-        int i=0;
     }
 
 

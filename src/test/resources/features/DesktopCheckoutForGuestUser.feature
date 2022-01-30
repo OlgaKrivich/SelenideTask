@@ -14,7 +14,7 @@ Feature: Desktop Checkout for Guest User
       | Thinking Java Part I   |
       | Core Java Professional |
     When I apply the following search filters
-      | Price range  | 30 € +         |
+      | Price range  | US$40 +       |
       | Availability | In Stock (5)   |
       | Language     | English (17) |
       | Format       | Paperback (22) |
@@ -28,12 +28,12 @@ Feature: Desktop Checkout for Guest User
     Then I am redirected to a Basket page
     And Basket order summary is as following:
       | Delivery cost | Total    |
-      | FREE          | 103,00 € |
+      | FREE          | US$67.55 |
     When I click 'Checkout' button on Basket page
     And I checkout as a new customer with email 'test@user.com'
     Then Checkout order summary is as following:
       | Sub-total | Delivery | VAT    | Total    |
-      | 103,00 €  | FREE     | 0,00 € | 103,00 €|
+      | US$67.55  | FREE     | US$0.00 | US$67.55|
     When I fill delivery address information manually:
       | Full name | Delivery country | Address line 1   | Address line 2   | Town/City | County/State | Postcode |
       | John      | Ukraine          | Random address 1 | Random address 2 | Kyiv      | Random State | 12345    |

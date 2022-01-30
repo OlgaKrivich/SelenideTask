@@ -13,10 +13,12 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import java.util.List;
 import java.util.Map;
+import org.apache.log4j.Logger;
 
 public class PaymentStepDefs {
 
     PaymentPage paymentPage = new PaymentPage();
+    private final static Logger logger = Logger.getLogger(PaymentStepDefs.class);
 
     @DataTableType
     public DeliveryAddressDTO convertAddressDto(Map<String, String> entry) {
@@ -44,6 +46,7 @@ public class PaymentStepDefs {
     @When("^I checkout as a new customer with email '([\\w ]{1,}+@[\\w ]{1,}\\.[\\w ]{1,})'$")
     public void checkoutAsNewCustomer(String email) {
         paymentPage.getNewCustomerFragment().enterEmailCustomer(email);
+        logger.info("Member with " + email + " was checkouted");
     }
 
     @When("I fill delivery address information manually:")

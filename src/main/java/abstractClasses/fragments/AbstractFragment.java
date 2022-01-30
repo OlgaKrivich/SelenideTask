@@ -10,6 +10,9 @@ public class AbstractFragment extends WebDriverWaiter {
 
     private SelenideElement rootElement;
 
+    public AbstractFragment() {
+    }
+
     public void setRootElement(SelenideElement element) {
         this.rootElement = element;
     }

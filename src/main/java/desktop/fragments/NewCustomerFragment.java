@@ -10,7 +10,6 @@ import static utils.WebDriverUtils.switchToIframe;
 import abstractClasses.fragments.AbstractFragment;
 import com.codeborne.selenide.SelenideElement;
 import java.util.List;
-import org.openqa.selenium.support.ui.Select;
 
 
 public class NewCustomerFragment extends AbstractFragment {
@@ -22,20 +21,20 @@ public class NewCustomerFragment extends AbstractFragment {
     private final SelenideElement enterAddressManuallyButton = $x(
             "//button[@id='manualEntryDeliveryAddress']");
 
-    private final SelenideElement fullNameField = $x("//input[@name='delivery-fullName']");
+    private final SelenideElement fullNameField = $x(".//input[@name='delivery-fullName']");
 
-    private final SelenideElement countryDropDown = $x("//select[@id='delivery-CountryDropdown']");
+    private final SelenideElement countryDropDown = $x(".//select[@id='delivery-CountryDropdown']");
 
-    private final SelenideElement addressLine1Field = $x("//input[@name='delivery-addressLine1']");
+    private final SelenideElement addressLine1Field = $x(".//input[@name='delivery-addressLine1']");
 
-    private final SelenideElement addressLine2Field = $x("//input[@name='delivery-addressLine2']");
-    private final SelenideElement townOrCityField = $x("//input[@name='delivery-city']");
+    private final SelenideElement addressLine2Field = $x(".//input[@name='delivery-addressLine2']");
+    private final SelenideElement townOrCityField = $x(".//input[@name='delivery-city']");
     private final SelenideElement countryOrStateField = $x("//input[@name='delivery-county']");
-    private final SelenideElement postcodeOrZipField = $x("//input[@name='delivery-postCode']");
-    private final SelenideElement cardNumberField = $x("//input[@id='credit-card-number']");
+    private final SelenideElement postcodeOrZipField = $x(".//input[@name='delivery-postCode']");
+    private final SelenideElement cardNumberField = $x(".//input[@id='credit-card-number']");
 
-    private final SelenideElement expiryDateField = $x("//input[@id='expiration']");
-    private final SelenideElement cvvField = $x("//input[@id='cvv']");
+    private final SelenideElement expiryDateField = $x(".//input[@id='expiration']");
+    private final SelenideElement cvvField = $x(".//input[@id='cvv']");
 
     private final SelenideElement cardNumberIFrame = $x(
             "//iframe[@id='braintree-hosted-field-number']");
@@ -45,6 +44,8 @@ public class NewCustomerFragment extends AbstractFragment {
 
     private final SelenideElement cvvIFrame = $x("//iframe[@id='braintree-hosted-field-cvv']");
 
+    public NewCustomerFragment() {
+    }
 
     public boolean checkValidationErrorIsDisplayed() {
         List<SelenideElement> errorsList = $$x("//div[@class='error-block']");
@@ -60,7 +61,7 @@ public class NewCustomerFragment extends AbstractFragment {
     }
 
     public void setDeliveryCountry(String country) {
-        countryDropDown.selectOptionByValue(country);
+        countryDropDown.selectOption(country);
     }
 
     public void setAddressLine1(String addressLine1) {

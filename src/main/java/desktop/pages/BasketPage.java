@@ -16,14 +16,14 @@ public class BasketPage extends AbstractPage {
     private final SelenideElement checkoutButton = $x(
             "//div[@class='checkout-btns-wrap']/a[@href='/payment/guest']");
 
-//    @FindBy(xpath = "//title")
-//    private WebElement pageTitle;
-
     private final SelenideElement deliveryCost = $x("//dl[@class='delivery-text']/dt");
 
     private final SelenideElement totalCost = $x("//dl[@class='total']/dt");
 
     AddToBasketPopUp addToBasketPopUp = new AddToBasketPopUp();
+
+    public BasketPage() {
+    }
 
     public AddToBasketPopUp getAddToBasketPopUp() {
         return addToBasketPopUp;

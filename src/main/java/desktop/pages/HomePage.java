@@ -13,6 +13,8 @@ public class HomePage extends AbstractPage {
 
     private final SelenideElement searchButton = $x("//button[@class='header-search-btn']");
 
+    public HomePage() {
+    }
 
     public void openWebSite() {
         open(BASE_URL);

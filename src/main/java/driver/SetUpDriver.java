@@ -9,8 +9,13 @@ import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
 
+
 public class SetUpDriver {
+
     private final static Logger logger = Logger.getLogger(SetUpDriver.class);
+
+    private SetUpDriver() {
+    }
 
     public void setUpDriver() {
         Configuration.browser = "chrome";
@@ -18,12 +23,12 @@ public class SetUpDriver {
         Configuration.browserSize = "1920x1080";
         Selenide.open(BASE_URL);
         logger.debug("Browser was opened");
+        Configuration.reportsFolder = "./screenshots";
     }
 
     @Before
     public void init() {
         setUpDriver();
-
     }
 
     @After
@@ -36,8 +41,5 @@ public class SetUpDriver {
         return Selenide.title();
     }
 
-    public static void clearCookies(){
-        Selenide.clearBrowserCookies();
-    }
 
 }

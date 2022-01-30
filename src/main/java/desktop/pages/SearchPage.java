@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class SearchPage extends AbstractPage {
+
     public static final String SEARCH_PAGE_URL = BASE_URL + "/search";
     public static final String TITLE = "Results for 'Thinking in Java' | Book Depository";
 
@@ -19,6 +20,9 @@ public class SearchPage extends AbstractPage {
 
     @FindBy(xpath = "//title")
     private WebElement pageTitle;
+
+    public SearchPage() {
+    }
 
 
     public BookItemFragment getBookItemFragment() {
@@ -36,7 +40,6 @@ public class SearchPage extends AbstractPage {
     public ChristmasPopUp getChristmasPopUp() {
         return christmasPopUp;
     }
-
 
 
 }

@@ -18,7 +18,6 @@ public class SearchResultsFragment extends AbstractFragment {
     public SearchResultsFragment() {
     }
 
-
     public List<String> getBookItemsTitles() {
         return booksItemsCollection.stream()
                 .map(WebElement::getText)
