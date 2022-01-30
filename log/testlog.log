@@ -1,0 +1,4 @@
+2022-01-30 16:33:47,257 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-30 16:33:51,805 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-30 16:33:55,115 - stepDefs.SearchPageStepDefs -INFO - Thinking in Java was added to the Basket
+2022-01-30 16:34:07,455 - stepDefs.PaymentStepDefs -INFO - Member with test@user.com was checkouted
