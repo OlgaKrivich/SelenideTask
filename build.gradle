@@ -1,0 +1,94 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+repositories {
+    mavenLocal()
+
+    maven {
+        url = uri('https://repo.maven.apache.org/maven2/')
+    }
+}
+
+dependencies {
+    implementation 'org.junit.platform:junit-platform-runner:1.5.2'
+    implementation 'org.junit.jupiter:junit-jupiter-engine:5.8.0-M1'
+    implementation 'io.cucumber:cucumber-java:5.7.0'
+    implementation 'io.cucumber:cucumber-junit:5.7.0'
+    implementation 'com.codeborne:selenide:5.25.1'
+    implementation 'log4j:log4j:1.2.17'
+    implementation 'com.epam.reportportal:agent-java-cucumber5:5.0.1'
+    testImplementation 'org.assertj:assertj-core:3.21.0'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+description = 'SelenideTask'
+java.sourceCompatibility = JavaVersion.VERSION_1_8
+
+
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}
+
+task allTests {
+    dependsOn assemble, testClasses
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = [
+                    '--plugin', 'pretty',
+                    '--plugin', 'html:target/cucumber-report.html',
+                    '--glue', 'stepDefs', 'src/test/resources']
+        }
+    }
+}
+
+task TestsWithTagSmoke {
+    dependsOn assemble, compileTestJava
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = [
+                    '--plugin', 'pretty',
+                    '--plugin', 'html:target/cucumber-report.html',
+                    '--glue', 'stepDefs', 'src/test/resources',
+                    '--tags', '@Smoke'
+            ]
+        }
+    }
+}
+
+
+task TestsWithTagRegressionParallel {
+    dependsOn assemble, compileTestJava
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = [
+                    '--plugin', 'pretty',
+                    '--plugin', 'html:target/cucumber-report.html',
+                    '--glue', 'stepDefs', 'src/test/resources',
+                    '--tags', "${tags}",
+                    '--threads', 2
+            ]
+        }
+    }
+}
+
+task cucumber() {
+    dependsOn assemble, testClasses
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = ['--plugin', 'pretty', '--tags', "${tags}", '--glue', 'stepDefs', 'src/test/resources']
+        }
+    }
+}

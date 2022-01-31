@@ -2,3 +2,74 @@
 2022-01-30 16:33:51,805 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
 2022-01-30 16:33:55,115 - stepDefs.SearchPageStepDefs -INFO - Thinking in Java was added to the Basket
 2022-01-30 16:34:07,455 - stepDefs.PaymentStepDefs -INFO - Member with test@user.com was checkouted
+2022-01-31 20:03:55,365 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 20:03:56,796 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 20:04:12,110 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 20:04:13,525 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 20:04:48,997 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 20:04:50,466 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 20:05:31,805 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 20:05:33,604 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 20:05:48,848 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 20:05:50,555 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 20:06:40,344 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 20:06:41,907 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 20:07:18,554 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 20:07:20,067 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 20:09:32,175 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 20:09:33,562 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 20:09:36,493 - stepDefs.SearchPageStepDefs -INFO - Thinking in Java was added to the Basket
+2022-01-31 20:10:08,151 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 20:10:09,628 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 20:10:12,652 - stepDefs.SearchPageStepDefs -INFO - Thinking in Java was added to the Basket
+2022-01-31 20:10:31,536 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 20:10:32,909 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 20:10:35,642 - stepDefs.SearchPageStepDefs -INFO - Thinking in Java was added to the Basket
+2022-01-31 20:10:42,749 - stepDefs.PaymentStepDefs -INFO - Member with test@user.com was checkouted
+2022-01-31 20:14:30,618 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 20:14:32,367 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 20:14:35,678 - stepDefs.SearchPageStepDefs -INFO - Thinking in Java was added to the Basket
+2022-01-31 20:14:43,078 - stepDefs.PaymentStepDefs -INFO - Member with test@user.com was checkouted
+2022-01-31 21:34:56,283 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 21:34:57,833 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 21:35:00,680 - stepDefs.SearchPageStepDefs -INFO - Thinking in Java was added to the Basket
+2022-01-31 21:35:08,307 - stepDefs.PaymentStepDefs -INFO - Member with test@user.com was checkouted
+2022-01-31 21:38:39,428 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 21:38:40,903 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 21:38:43,667 - stepDefs.SearchPageStepDefs -INFO - Thinking in Java was added to the Basket
+2022-01-31 21:38:51,029 - stepDefs.PaymentStepDefs -INFO - Member with test@user.com was checkouted
+2022-01-31 22:34:51,105 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 22:34:52,629 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 22:34:55,111 - stepDefs.SearchPageStepDefs -INFO - Thinking in Java was added to the Basket
+2022-01-31 22:34:59,527 - stepDefs.PaymentStepDefs -INFO - Member with test@user.com was checkouted
+2022-01-31 22:39:23,939 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 22:39:25,675 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 22:39:28,241 - stepDefs.SearchPageStepDefs -INFO - Thinking in Java was added to the Basket
+2022-01-31 22:39:34,380 - stepDefs.PaymentStepDefs -INFO - Member with test@user.com was checkouted
+2022-01-31 22:50:16,548 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 22:50:17,791 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 22:50:19,988 - stepDefs.SearchPageStepDefs -INFO - Thinking in Java was added to the Basket
+2022-01-31 22:50:24,134 - stepDefs.PaymentStepDefs -INFO - Member with test@user.com was checkouted
+2022-01-31 22:50:27,530 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 22:52:00,345 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 22:52:04,666 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 22:52:47,226 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 23:02:06,541 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 23:02:09,073 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 23:02:12,020 - stepDefs.SearchPageStepDefs -INFO - Thinking in Java was added to the Basket
+2022-01-31 23:02:18,672 - stepDefs.PaymentStepDefs -INFO - Member with test@user.com was checkouted
+2022-01-31 23:02:21,889 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 23:02:23,118 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 23:02:25,564 - stepDefs.SearchPageStepDefs -INFO - Thinking in Java was added to the Basket
+2022-01-31 23:07:49,246 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 23:07:50,678 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 23:07:53,021 - stepDefs.SearchPageStepDefs -INFO - Thinking in Java was added to the Basket
+2022-01-31 23:07:58,995 - stepDefs.PaymentStepDefs -INFO - Member with test@user.com was checkouted
+2022-01-31 23:08:01,747 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 23:16:05,020 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 23:16:06,234 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 23:16:08,613 - stepDefs.SearchPageStepDefs -INFO - Thinking in Java was added to the Basket
+2022-01-31 23:16:17,582 - stepDefs.PaymentStepDefs -INFO - Member with test@user.com was checkouted
+2022-01-31 23:16:20,995 - stepDefs.HomePageStepDefs -INFO - Home page was opened
+2022-01-31 23:16:22,173 - stepDefs.SearchPageStepDefs -INFO - User was redirected to Search page
+2022-01-31 23:16:24,687 - stepDefs.SearchPageStepDefs -INFO - Thinking in Java was added to the Basket

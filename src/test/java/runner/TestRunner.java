@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         monochrome = true,
         glue = "stepDefs",
         plugin = {"pretty", "com.epam.reportportal.cucumber.StepReporter"},
-        tags = "@Regression"
+        tags = {"@Regression", "@Smoke"}
 )
 public class TestRunner {
 
